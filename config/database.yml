@@ -1,0 +1,16 @@
+
+
+
+development:
+  adapter: postgresql
+  database: biz_development
+  encoding: unicode
+  username: Reggie
+  password: " "
+
+test:
+  adapter: postgresql
+  database: biz_development
+  encoding: unicode
+  username: Reggie
+  password: " "
