@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 
   has_many :subscriptions
   has_many :projects, through: :subscriptions
-
+  has_many :reviews
 
 
 def self.find_for_facebook_oauth(access_token, signed_in_resourse=nil)
