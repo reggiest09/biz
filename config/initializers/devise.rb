@@ -15,6 +15,6 @@ Devise.setup do |config|
   config.sign_out_via = :delete
 
  require 'omniauth-facebook'
-  config.omniauth :facebook, '192554947803780', '6a4f294f43d3b30a837cf266ece52f63', scope: 'email', info_fields: 'name,email'
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'], scope: 'email', info_fields: 'name,email'
  
 end

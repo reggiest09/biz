@@ -22,9 +22,12 @@ has_attached_file :image, :styles => { :medium => "680x300>", :thumb => "170x75>
 def shortname
     name.length > 25? name[0..25] + "..." : name
   end
-  
 
   def average_rating
     reviews.blank? ? 0 : reviews.average(:star).round(2)
+  end
+
+  def price_in_cents
+    (self.price*100).to_i
   end
 end

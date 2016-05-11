@@ -1,7 +1,7 @@
 ActiveAdmin.register Task do
-permit_params :title, :note, :video, :header, :tag, :project_id
+  permit_params :title, :note, :video, :header, :tag, :project_id
 
-sortable tree: false,
+  sortable tree: false,
             sorting_attribute: :tag
 
   index :as => :sortable do
@@ -19,7 +19,17 @@ sortable tree: false,
 
     actions
   end
+
+  form do |f|
+    f.inputs do
+      input :project, label: "Project"
+      input :title, label: "Title"
+      input :note, label: "Note"
+      input :video, label: "video"
+      input :header, label: "Header"
+    end
+
+    actions
+  end
+
 end
-
-
- 

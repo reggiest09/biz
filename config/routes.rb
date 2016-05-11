@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   root 'project#index'
   post '/free' => 'charge#free'
   get '/myprojects' => 'project#list'
-
+  post '/pay' => 'charge#pay'  
+  
   resources :project do
     resources :task, only: [:show]
   end
