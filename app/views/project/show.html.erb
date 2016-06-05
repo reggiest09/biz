@@ -28,7 +28,7 @@
 
                 <script>
                   var handler = StripeCheckout.configure({
-                    key: '<%= ENV[STRIPE_PUBLIC_KEY] %>',
+                    key: '<%= ENV['STRIPE_PUBLIC_KEY'] %>',
                     token: function(token, arg) {
                       $('#stripeToken').val(token.id);
                       $('#stripeEmail').val(token.email);
@@ -123,9 +123,25 @@
           </div>
         </div>
 
-        <div id="discussions" class="col s12">
+        <div id="discussions" class="col s10 offset-s1">
           <!-- Discussion would be here -->
+
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES * * */
+              var disqus_shortname = 'frame88tutorials';
+              var disqus_identifer = '<%= @project.id %>';
+              
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </div>
+
       </div>
 
       
