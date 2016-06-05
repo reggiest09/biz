@@ -24,7 +24,7 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'active_admin-sortable_tree', '~> 0.2.1'
 gem 'stripe', '~> 1.41'
 gem "figaro"
-gem 'aws-sdk', '~> 2.3', '>= 2.3.8'
+gem 'aws-sdk', '~> 1.6'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
