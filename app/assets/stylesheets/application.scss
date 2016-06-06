@@ -32,8 +32,8 @@ main {
 
 .video-container {
     margin-top: 40px;
-    margin-bottom: 70px;
-
+    margin-bottom: 20px;
+}
 
 .video-container {
   position: relative;
@@ -49,12 +49,25 @@ main {
   height: 100%;
 }
 
-
-
-
-
-
+.card-panel {
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
+
+
+
+
+.card-panel {
+  
+  font-size: 25px;
+    color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 .row {
     margin-left: -15px;
     margin-right: -15px;
@@ -62,14 +75,14 @@ main {
 
 .pro-projects {
     margin-bottom: 70px;
-    }
-.banner-img > div h1 {
-    font-size: 25px;
-    color: #e5e5e5;
-    
-    }
-
-
-.col-lg-9 {
-    width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
