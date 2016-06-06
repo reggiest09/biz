@@ -28,27 +28,48 @@ main {
 }
 
 
-.banner-img {
-    min-height: 416px;
-    width: 100%;
-    box-shadow: 0 2px 8px gray;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    }
 
-.banner {
+.video-container {
     margin-top: 40px;
     margin-bottom: 70px;
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
 }
 .row {
     margin-left: -15px;
     margin-right: -15px;
 }
 
+.pro-projects {
+    margin-bottom: 70px;
+    }
+.banner-img > div h1 {
+    font-size: 25px;
+    color: #e5e5e5;
+    
+    }
 
 
-
-
-
-
+.col-lg-9 {
+    width: 100%;
+}

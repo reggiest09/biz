@@ -14,7 +14,7 @@
             <% if @project.price == 0 %>
               <%= form_tag free_path do %>
                 <%= hidden_field_tag 'project_id', @project.id %>
-                <button type="submit" class="btn pink darken-2">Take this Project</button>
+                <button type="submit" class="btn orange darken-4">Take this Project</button>
               <% end %>
             <% else %>
               <%= form_tag pay_path, id:'chargeForm' do %>
@@ -24,7 +24,7 @@
                 <%= hidden_field_tag 'stripeEmail' %>
                 <%= hidden_field_tag 'project_id', @project.id %>                    
 
-                <button id="btn-buy" type="button" class="btn pink darken-2">Take this Project</button><br/>
+                <button id="btn-buy" type="button" class="btn orange darken-4">Take this Project</button><br/>
 
                 <script>
                   var handler = StripeCheckout.configure({
@@ -52,7 +52,7 @@
             
           <% else %>
             <%= link_to new_user_session_path do %> 
-              <button type="submit" class="btn pink darken-2">Take this Project</button>
+              <button type="submit" class="btn orange darken-4">Take this Project</button>
             <% end %>
           <% end %>
 
